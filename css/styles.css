@@ -74,7 +74,7 @@ div:focus,
 }
 
 .container {
-  /* width: 1158px; */
+  width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -725,11 +725,12 @@ footer {
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms var(--timing-function),
     visability 250ms var(--timing-function);
+  overflow-y: scroll;
 }
 
 .modal {
   position: absolute;
-  width: 408px;
+  max-width: 408px;
   top: 88px;
   left: 50%;
   background-color: #fcfcfc;
@@ -895,7 +896,7 @@ input:hover + svg {
 }
 
 .container-input {
-  width: 264px;
+  max-width: 264px;
 }
 .subscribe-container {
   margin-left: 80px;
@@ -1103,6 +1104,7 @@ input:hover + svg {
   .container {
     max-width: 767px;
     flex-direction: column;
+    width: auto;
   }
 }
 
@@ -1177,7 +1179,7 @@ input:hover + svg {
 
 @media screen and (max-width: 767px) {
   .container-input {
-    width: 396px;
+    max-width: 396px;
     display: flex;
     flex-direction: column;
     align-items: center;
