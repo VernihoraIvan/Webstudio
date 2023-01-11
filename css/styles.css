@@ -74,7 +74,8 @@ div:focus,
 }
 
 .container {
-  width: 1158px;
+  max-width: 1158px;
+  min-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -127,7 +128,7 @@ div:focus,
 
 .site-nav {
   display: flex;
-  padding-right: 331px;
+  /* padding-right: 331px; */
 }
 
 .nav-list {
@@ -152,6 +153,8 @@ div:focus,
   padding: 24px 15px 28px 15px;
   align-items: center;
   position: relative;
+  justify-content: space-between;
+  height: 76px;
 }
 
 /* ==============================FLEX======================= */
@@ -396,6 +399,7 @@ button {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
 
 .member-list .project-item-text {
@@ -777,7 +781,6 @@ footer {
 .modal-form {
   padding: 72px 24px 24px 24px;
   display: flex;
-
   flex-direction: column;
 }
 
@@ -1007,6 +1010,7 @@ input:hover + svg {
 }
 
 /* =================responsive part================ */
+/* ================mobile part===================== */
 @media screen and (max-width: 767px) {
   .hero-title {
     font-size: 36px;
@@ -1043,7 +1047,7 @@ input:hover + svg {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .advantages-icon-container {
     display: none;
   }
@@ -1068,13 +1072,7 @@ input:hover + svg {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .advantages-list-item {
-    width: unset;
-  }
-}
-
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .container-occupation {
     display: none;
   }
@@ -1103,7 +1101,7 @@ input:hover + svg {
 @media screen and (max-width: 767px) {
   .container {
     max-width: 767px;
-    flex-direction: column;
+    /* flex-direction: column; */
     width: auto;
   }
 }
@@ -1187,27 +1185,25 @@ input:hover + svg {
   }
 }
 @media screen and (max-width: 767px) {
-  .social-media {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 72px;
+  .contact-list,
+  .nav-list {
+    display: none;
   }
+}
 
-  .site-nav {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+/* @media screen and (min-width: 769px) {
+  .contact-list,
+  .nav-list {
+    display: block;
   }
+} */
 
-  .social-media {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 72px;
-  }
+.social-media {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 72px;
 }
 
 .menu-toggle {
@@ -1221,7 +1217,13 @@ input:hover + svg {
 }
 
 @media screen and (min-width: 768px) {
-  .menu-toggle {
+  .js-menu-container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .js-open-menu {
     display: none;
   }
 }
@@ -1244,6 +1246,12 @@ input:hover + svg {
   display: inline-flex;
   align-items: center;
   transition: background-color 250ms var(--timing-function);
+}
+
+@media screen and (max-width: 767px) {
+  .modal-form {
+    min-width: 392px;
+  }
 }
 
 .js-menu-container.is-open .svg-mobile-menu {
@@ -1274,12 +1282,79 @@ input:hover + svg {
 .svg-mobile-menu {
   width: 24px;
   height: 24px;
+  background-color: #ffffff;
 }
 
 .js-menu-container {
-  width: 24px;
-  height: 24px;
   position: absolute;
-  top: 100%;
-  right: 50%;
+  right: 4%;
+}
+
+@media screen and (max-width: 767px) {
+  .button-list {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+
+/* =======================tablet part=============== */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact-list {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact-list li:first-child {
+    margin: 0;
+  }
+}
+
+/* @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container-header {
+    padding: 24px 16px 10px 16px;
+  }
+} */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .advantages-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 736px;
+    row-gap: 24px;
+    column-gap: 72px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .nav-list {
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .site-nav {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .member-list {
+    max-width: 600px;
+    flex-wrap: wrap;
+    row-gap: 64px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .customer-list {
+    max-width: 600px;
+    margin: 72px auto 96px auto;
+    margin-top: 72px;
+    margin-bottom: 96px;
+    max-width: 600px;
+    flex-wrap: wrap;
+  }
 }
