@@ -124,6 +124,7 @@ div:focus,
 .header {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  position: relative;
 }
 
 .site-nav {
@@ -496,6 +497,7 @@ button {
   display: flex;
   gap: 24px;
   margin-top: 72px;
+  justify-content: center;
 }
 
 .customer-list:hover,
@@ -699,6 +701,7 @@ footer {
 }
 
 .project-item {
+  margin: 0 auto;
   width: 360px;
   height: 420px;
   transition: box-shadow 250ms var(--timing-function);
@@ -931,7 +934,9 @@ input:hover + svg {
   height: 40px;
   background-color: inherit;
   color: #ffffff;
-  padding: 8px 212px 8px 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
 }
 
 .subscribe-button {
@@ -1011,7 +1016,7 @@ input:hover + svg {
 
 /* =================responsive part================ */
 /* ================mobile part===================== */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .hero-title {
     font-size: 36px;
     width: 318px;
@@ -1020,13 +1025,13 @@ input:hover + svg {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .hero {
     background-position: top;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .advantages-list {
     display: flex;
     flex-direction: column;
@@ -1034,16 +1039,16 @@ input:hover + svg {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .container {
     padding-left: 16px;
     padding-right: 16px;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .container-header {
-    max-width: 767px;
+    max-width: 768px;
   }
 }
 
@@ -1053,22 +1058,22 @@ input:hover + svg {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .advantages-sub-title {
     font-size: 36px;
     text-align: center;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   body {
-    max-width: 767px;
+    max-width: 768px;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .our-team {
-    max-width: 767px;
+    max-width: 768px;
   }
 }
 
@@ -1078,35 +1083,35 @@ input:hover + svg {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .member-list {
     flex-direction: column;
     align-self: center;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .container-our-team {
-    max-width: 767px;
+    max-width: 768px;
     flex-direction: column;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .our-team-item {
     max-width: 264px;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .container {
-    max-width: 767px;
+    max-width: 768px;
     /* flex-direction: column; */
     width: auto;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .customer-list {
     flex-wrap: wrap;
     gap: 72px 16px;
@@ -1114,48 +1119,57 @@ input:hover + svg {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .customer-list-item-link {
     width: 190px;
     justify-content: center;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
+  .customer-list-item-link {
+    width: 168px;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .customers-item {
     width: 110px;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .bottom-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 428px;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .subscribe-form {
     flex-direction: column;
     justify-content: center;
     margin: 0;
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .subscribe-button {
     align-self: center;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .second-logo {
     margin: 0 auto;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .logo-block {
     display: flex;
     justify-content: center;
@@ -1165,7 +1179,7 @@ input:hover + svg {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .social-media {
     display: flex;
     justify-content: center;
@@ -1175,16 +1189,18 @@ input:hover + svg {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .container-input {
-    max-width: 396px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: inherit;
+    margin-bottom: 16px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .contact-list,
   .nav-list {
     display: none;
@@ -1214,6 +1230,7 @@ input:hover + svg {
   background-color: transparent;
   width: 24px;
   height: 24px;
+  position: absolute;
 }
 
 @media screen and (min-width: 768px) {
@@ -1248,7 +1265,7 @@ input:hover + svg {
   transition: background-color 250ms var(--timing-function);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .modal-form {
     min-width: 392px;
   }
@@ -1288,9 +1305,10 @@ input:hover + svg {
 .js-menu-container {
   position: absolute;
   right: 4%;
+  z-index: 1;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .button-list {
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -1357,4 +1375,141 @@ input:hover + svg {
     max-width: 600px;
     flex-wrap: wrap;
   }
+}
+
+@media screen and (max-width: 1199px) {
+  .project-card {
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1158px) {
+  .project-item:last-child {
+    margin: 0 auto;
+    position: relative;
+    right: 25%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .bottom-container {
+    flex-wrap: wrap;
+    max-width: 496px;
+    padding: 0;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscribe-form {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo-block {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 767px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1158px;
+  }
+}
+
+/* .js-menu-container.is-open .mobile-nav-menu; */
+
+.mobile-nav-menu {
+  display: none;
+}
+
+.mobile-nav-list li {
+  margin-top: 40px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+}
+
+.mobile-nav-list li a {
+  color: var(--title-color-navyblue);
+}
+
+.mobile-nav-list li a:hover,
+.mobile-nav-list li a:focus {
+  color: var(--active-blue-button-color);
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-nav-menu {
+    display: none;
+  }
+}
+
+.mobile-contact-list {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 40px;
+}
+
+.mobile-menu-social-list {
+  display: flex;
+  gap: 24px;
+  margin-top: 8px;
+  justify-content: space-between;
+}
+
+.mobile-envelope {
+  color: var(--text-color-slate);
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.mobile-phone {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.11;
+  color: var(--text-color-slate);
+}
+
+.mobile-envelope:hover,
+.mobile-envelope:focus,
+.mobile-phone:hover,
+.mobile-phone:focus {
+  color: var(--blue-button-color);
+}
+
+.js-menu-container.is-open .mobile-nav-menu {
+  display: block;
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  position: absolute;
+  background-color: var(--main-background-color);
+  left: 540px;
+  justify-content: space-between;
+  left: -550px;
+  top: -15px px;
+}
+
+.menu-toggle {
+  z-index: 1;
 }

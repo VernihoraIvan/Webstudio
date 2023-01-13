@@ -33,7 +33,7 @@
           <div class="js-menu-container">
             <button
               type="button"
-              class="menu-toggle js-open-menu"
+              class="menu-toggle js-open-menu js-close-menu"
               aria-expanded="false"
             >
               <svg aria-label="mobile menu" class="svg-mobile-menu">
@@ -44,6 +44,71 @@
                 ></use>
               </svg>
             </button>
+            <div class="mobile-nav-menu">
+              <ul class="mobile-nav-list">
+                <li class="studio">
+                  <a class="studio-link" href="./index.html">Studio</a>
+                </li>
+
+                <li><a href="./portfolio.html">Portfolio</a></li>
+
+                <li><a href="">Contacts</a></li>
+              </ul>
+              <ul class="mobile-contact-list">
+                <li>
+                  <a class="mobile-envelope" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li>
+                  <a class="mobile-phone" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+              </ul>
+              <ul class="mobile-menu-social-list">
+                <li class="socials-list-item">
+                  <a href="" class="socials-link">
+                    <svg class="socials-item" width="40px" height="40px">
+                      <use
+                        class="use-socials"
+                        href="./images/icon.svg#icon-instagram"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials-list-item">
+                  <a href="" class="socials-link">
+                    <svg class="socials-item" width="40px" height="40px">
+                      <use
+                        class="use-socials"
+                        href="./images/icon.svg#icon-tweeter"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials-list-item">
+                  <a href="" class="socials-link">
+                    <svg class="socials-item" width="40px" height="40px">
+                      <use
+                        class="use-socials"
+                        href="./images/icon.svg#icon-facebook"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials-list-item">
+                  <a href="" class="socials-link">
+                    <svg class="socials-item" width="40px" height="40px">
+                      <use
+                        class="use-socials"
+                        href="./images/icon.svg#icon-linkedin"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
         <!-- Contacts -->
@@ -56,6 +121,7 @@
           </li>
         </ul>
       </div>
+      <!-- ==================== MOBILE MENU=============== -->
     </header>
     <main>
       <!-- ============================HERO================== -->
@@ -590,13 +656,13 @@
               placeholder="E-mail"
             />
           </div>
-          <button class="subscribe-button" type="submit">
-            Subscribe
-            <svg class="svg-send" width="24px" height="20px">
-              <use class="use-send" href="./images/icon.svg#icon-send"></use>
-            </svg>
-          </button>
         </form>
+        <button class="subscribe-button" type="submit">
+          Subscribe
+          <svg class="svg-send" width="24px" height="20px">
+            <use class="use-send" href="./images/icon.svg#icon-send"></use>
+          </svg>
+        </button>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
