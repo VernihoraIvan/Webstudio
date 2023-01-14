@@ -1230,7 +1230,6 @@ input:hover + svg {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 72px;
 }
 
 .menu-toggle {
@@ -1244,8 +1243,8 @@ input:hover + svg {
 
 .menu-toggle-close {
   position: absolute;
-      top: 0;
-    right: 0;
+  top: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1258,7 +1257,6 @@ input:hover + svg {
   cursor: pointer;
   box-shadow: none;
   transition: background-color 250ms var(--timing-function);
-
 }
 
 .menu-toggle-close:hover,
@@ -1367,8 +1365,8 @@ input:hover + svg {
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 736px;
-    row-gap: 24px;
-    column-gap: 72px;
+    row-gap: 72px;
+    column-gap: 24px;
   }
 }
 
@@ -1421,7 +1419,7 @@ input:hover + svg {
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .bottom-container {
     flex-wrap: wrap;
-    max-width: 496px;
+
     padding: 0;
     justify-content: flex-start;
     gap: 24px;
@@ -1440,16 +1438,9 @@ input:hover + svg {
   }
 }
 
-/* @media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-    /* padding: 0; */
-  }
-} */
-
 @media screen and (min-width: 767px) {
   .container {
-    width: 767px;
+    width: 552px;
     padding: 0;
   }
 }
@@ -1462,7 +1453,6 @@ input:hover + svg {
 
 /* .mobile-nav-button.is-open .js-menu-container; */
 
- 
 .mobile-nav-list li {
   margin-top: 40px;
   font-weight: 700;
@@ -1509,7 +1499,7 @@ input:hover + svg {
   font-weight: 600;
   font-size: 36px;
   line-height: 1.11;
-  color: var(--text-color-slate);
+  color: var(--blue-button-color);
 }
 
 .mobile-envelope:hover,
@@ -1519,32 +1509,32 @@ input:hover + svg {
   color: var(--blue-button-color);
 }
 
-.js-menu-container {   
-      position: absolute;
-    background-color: var(--main-background-color);
-    width: 100%;
-    top: -685%; 
-    transition-property: transform;
-    transition-duration: 500ms;
-    transition-timing-function: var(--timing-function);
-    transition: transform 250ms var(--timing-function);
+.js-menu-container {
+  position: absolute;
+  background-color: var(--main-background-color);
+  width: 100%;
+  top: -685%;
+  transition-property: transform;
+  transition-duration: 500ms;
+  transition-timing-function: var(--timing-function);
+  transition: transform 250ms var(--timing-function);
 }
 
 .js-menu-container.is-open {
-        z-index: 1;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
-    background-color: var(--main-background-color);
-    justify-content: space-between;
-    transform: translateY(75%);
-    right: 0;
-    top: -75%;
-    align-items: center;
-    opacity: 1;
-    position: fixed;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  background-color: var(--main-background-color);
+  justify-content: space-between;
+  transform: translateY(75%);
+  right: 0;
+  top: -75%;
+  align-items: center;
+  opacity: 1;
+  position: fixed;
 }
 
 .js-menu-container.is-open body {
@@ -1609,6 +1599,13 @@ input:hover + svg {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office.jpg);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .advantages-sub-title {
+    font-size: 36px;
+    line-height: 1.11;
   }
 }
 
@@ -1728,10 +1725,9 @@ input:hover + svg {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width:1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .project-item {
     width: 356px;
     height: 420px;
   }
 }
-
