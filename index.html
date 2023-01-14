@@ -30,21 +30,7 @@
 
             <li><a href="">Contacts</a></li>
           </ul>
-          <div class="mobile-nav-button">
-            <button
-              type="button"
-              class="menu-toggle js-open-menu js-close-menu"
-              aria-expanded="false"
-            >
-              <svg aria-label="mobile menu" class="svg-mobile-menu">
-                <use class="icon-menu" href="./images/icon.svg#icon-menu"></use>
-                <use
-                  class="icon-cross"
-                  href="./images/icon.svg#icon-cross"
-                ></use>
-              </svg>
-            </button>
-          </div>
+          <div class="mobile-nav-button"></div>
         </nav>
         <!-- Contacts -->
         <ul class="contact-list">
@@ -55,8 +41,97 @@
             <a class="phone" href="tel:+110001111111">+11 (000) 111-11-11</a>
           </li>
         </ul>
+        <button
+          type="button"
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg aria-label="mobile menu" class="svg-mobile-menu">
+            <use class="icon-menu" href="./images/icon.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
       <!-- ==================== MOBILE MENU=============== -->
+      <div class="js-menu-container mobile-nav-menu" id="mobile-menu">
+        <div class="menu-container">
+          <button
+            type="button"
+            class="menu-toggle-close js-close-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg aria-label="mobile menu" class="svg-mobile-menu-close">
+              <use class="icon-cross" href="./images/icon.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <ul class="mobile-nav-list">
+            <li class="studio">
+              <a class="studio-link" href="./index.html">Studio</a>
+            </li>
+
+            <li><a href="./portfolio.html">Portfolio</a></li>
+
+            <li><a href="">Contacts</a></li>
+          </ul>
+          <div class="menu-bottom">
+            <ul class="mobile-contact-list">
+              <li>
+                <a class="mobile-envelope" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="mobile-phone" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-menu-social-list">
+              <li class="socials-list-item">
+                <a href="" class="socials-link">
+                  <svg class="socials-item" width="40px" height="40px">
+                    <use
+                      class="use-socials"
+                      href="./images/icon.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-list-item">
+                <a href="" class="socials-link">
+                  <svg class="socials-item" width="40px" height="40px">
+                    <use
+                      class="use-socials"
+                      href="./images/icon.svg#icon-tweeter"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-list-item">
+                <a href="" class="socials-link">
+                  <svg class="socials-item" width="40px" height="40px">
+                    <use
+                      class="use-socials"
+                      href="./images/icon.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-list-item">
+                <a href="" class="socials-link">
+                  <svg class="socials-item" width="40px" height="40px">
+                    <use
+                      class="use-socials"
+                      href="./images/icon.svg#icon-linkedin"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
       <!-- ============================HERO================== -->
@@ -128,14 +203,25 @@
           <h2 class="occupation-title">What Are We Doing</h2>
           <ul class="occupation-list">
             <li>
-              <img src="./images/1.jpg" alt="Computer screen" width="360" />
-            </li>
-            <li>
-              <img src="./images/2.jpg" alt="Phone screen" width="360" />
+              <img
+                src="./images/monitor.jpg"
+                srcset="./images/monitor.jpg 1x, ./images/monitor@2x.jpg 2x"
+                alt="Computer screen"
+                width="360"
+              />
             </li>
             <li>
               <img
-                src="./images/3.jpg"
+                src="./images/messenger.jpg"
+                srcset="./images/messenger.jpg 1x, ./images/messenger@2x.jpg 2x"
+                alt="Phone screen"
+                width="360"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/app.jpg"
+                srcset="./images/app.jpg 1x, ./images/app@2x.jpg 2x"
                 alt="Phone and computer screen"
                 width="360"
               />
@@ -152,6 +238,10 @@
             <li class="our-team-item">
               <img
                 src="./images/mark_guerrero.jpg"
+                srcset="
+                  ./images/mark_guerrero.jpg    1x,
+                  ./images/mark-guerrero@2x.jpg 2x
+                "
                 alt="Mark Guerrero's photo"
                 width="264"
               />
@@ -206,6 +296,7 @@
             <li class="our-team-item">
               <img
                 src="./images/tom_ford.jpg"
+                srcset="./images/tom_ford.jpg 1x, ./images/tom-ford@2x.jpg 2x"
                 alt="Tom Ford's photo"
                 width="264"
               />
@@ -260,6 +351,10 @@
             <li class="our-team-item">
               <img
                 src="./images/camila_garcia.jpg"
+                srcset="
+                  ./images/camila_garcia.jpg    1x,
+                  ./images/camila-garcia@2x.jpg 2x
+                "
                 alt="Camila Garcia's photo"
                 width="264"
               />
@@ -314,6 +409,10 @@
             <li class="our-team-item">
               <img
                 src="./images/daniel_wilson.jpg"
+                srcset="
+                  ./images/daniel_wilson.jpg    1x,
+                  ./images/daniel-wilson@2x.jpg 2x
+                "
                 alt="Daniel Wilson's photo"
                 width="264"
               />
@@ -522,71 +621,6 @@
           </button>
         </div>
       </div>
-      <div class="js-menu-container">
-        <ul class="mobile-nav-list">
-          <li class="studio">
-            <a class="studio-link" href="./index.html">Studio</a>
-          </li>
-
-          <li><a href="./portfolio.html">Portfolio</a></li>
-
-          <li><a href="">Contacts</a></li>
-        </ul>
-        <ul class="mobile-contact-list">
-          <li>
-            <a class="mobile-envelope" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="mobile-phone" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-        <ul class="mobile-menu-social-list">
-          <li class="socials-list-item">
-            <a href="" class="socials-link">
-              <svg class="socials-item" width="40px" height="40px">
-                <use
-                  class="use-socials"
-                  href="./images/icon.svg#icon-instagram"
-                ></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials-list-item">
-            <a href="" class="socials-link">
-              <svg class="socials-item" width="40px" height="40px">
-                <use
-                  class="use-socials"
-                  href="./images/icon.svg#icon-tweeter"
-                ></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials-list-item">
-            <a href="" class="socials-link">
-              <svg class="socials-item" width="40px" height="40px">
-                <use
-                  class="use-socials"
-                  href="./images/icon.svg#icon-facebook"
-                ></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials-list-item">
-            <a href="" class="socials-link">
-              <svg class="socials-item" width="40px" height="40px">
-                <use
-                  class="use-socials"
-                  href="./images/icon.svg#icon-linkedin"
-                ></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
     </main>
     <!-- ========================================================FOOTER=============================== -->
     <footer class="bottom">
@@ -665,6 +699,12 @@
         </button>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
