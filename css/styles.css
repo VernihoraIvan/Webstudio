@@ -1523,7 +1523,7 @@ input:hover + svg {
       position: absolute;
     background-color: var(--main-background-color);
     width: 100%;
-    top: -628%;  
+    top: -685%; 
     transition-property: transform;
     transition-duration: 500ms;
     transition-timing-function: var(--timing-function);
