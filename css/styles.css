@@ -246,7 +246,6 @@ header {
     url(../images/people-office.jpg);
   padding-top: 192px;
   padding-bottom: 192px;
-  height: 603px;
   max-width: 1440px;
   margin: 0 auto;
   background-size: cover;
@@ -1370,17 +1369,17 @@ input:hover + svg {
   }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1199px) {
+/* @media screen and (min-width: 767px) and (max-width: 1199px) {
   .nav-list {
     margin: auto;
   }
-}
+} */
 
-@media screen and (min-width: 767px) and (max-width: 1199px) {
+/* @media screen and (min-width: 767px) and (max-width: 1199px) {
   .site-nav {
     width: 100%;
   }
-}
+} */
 
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .member-list {
@@ -1438,15 +1437,36 @@ input:hover + svg {
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
   .container {
     width: 552px;
     padding: 0;
   }
 }
 
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .site-nav {
+    width: unset;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .container-header {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .project-card-continer {
+    width: 767px;
+  }
+}
+/* @media screen and (min-width: 767px) .container  */
+
 @media screen and (min-width: 1200px) {
-  .container {
+  .project-card-container {
     width: 1158px;
   }
 }
