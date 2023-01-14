@@ -1051,7 +1051,15 @@ input:hover + svg {
 
 @media screen and (max-width: 768px) {
   .container-header {
-    max-width: 768px;
+    width: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .container-header {
+    height: 70px;
   }
 }
 
@@ -1427,12 +1435,12 @@ input:hover + svg {
   }
 }
 
-@media screen and (min-width: 480px) {
+/* @media screen and (min-width: 480px) {
   .container {
     width: 480px;
     /* padding: 0; */
   }
-}
+} */
 
 @media screen and (min-width: 768px) {
   .container {
@@ -1480,6 +1488,7 @@ input:hover + svg {
   display: flex;
   flex-direction: column-reverse;
   gap: 40px;
+  margin-bottom: 48px;
 }
 
 .mobile-menu-social-list {
@@ -1521,6 +1530,11 @@ input:hover + svg {
   left: 0;
   right: 0;
   top: 0;
+
+  transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 /* .menu-toggle {
@@ -1582,7 +1596,7 @@ input:hover + svg {
   }
 }
 
-@media screen and (minx-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(
         to right,
@@ -1649,3 +1663,48 @@ input:hover + svg {
     padding-bottom: 108px;
   }
 } */
+.form-button {
+  display: flex;
+  gap: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .form-button {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .occupation {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .advantages-section {
+    padding: 96px 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .our-team {
+    padding-top: 96px;
+    padding-bottom: 128px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .customers {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bottom {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+}
