@@ -1502,7 +1502,12 @@ input:hover + svg {
     width: 767px;
   }
 }
-/* @media screen and (min-width: 767px) .container  */
+
+@media screen and (min-width: 1200px) {
+  .project-card-continer {
+    width: 1200px;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .project-card-container {
